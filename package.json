@@ -1,18 +1,32 @@
 {
-  "name": "vue3-sentry-test",
-  "version": "0.0.0",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build"
-  },
-  "dependencies": {
-    "@sentry/tracing": "^6.11.0",
-    "@sentry/vue": "^6.11.0",
-    "vue": "^3.0.4",
-    "vue-router": "^3.5.2"
-  },
-  "devDependencies": {
-    "@vue/compiler-sfc": "^3.0.4",
-    "vite": "^1.0.0-rc.13"
-  }
+    "version": "0.0.0",
+    "license": "ISC",
+    "//vue-tsc --noEmit && 在build里面加入检查 ": {},
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "serve": "vite preview"
+    },
+    "dependencies": {
+        "@sentry/tracing": "^6.11.0",
+        "@sentry/vue": "^6.11.0",
+        "add": "^2.0.6",
+        "ant-design-vue": "^2.2.0-beta.6",
+        "vue": "^3.0.5",
+        "vue-i18n": "^9.1.6",
+        "vue-router": "4",
+        "vuex": "4",
+        "yarn": "^1.22.11"
+    },
+    "devDependencies": {
+        "@types/node": "^15.12.5",
+        "@vitejs/plugin-legacy": "^1.4.2",
+        "@vitejs/plugin-vue": "^1.2.3",
+        "@vue/compiler-sfc": "^3.0.5",
+        "less": "^4.1.1",
+        "typescript": "^4.3.2",
+        "vite": "^2.3.8",
+        "vite-plugin-importer": "^0.2.3",
+        "vue-tsc": "^0.0.24"
+    }
 }

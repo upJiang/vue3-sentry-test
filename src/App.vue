@@ -1,15 +1,26 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3.0 + Vite" />
+  <div id="nav">
+      <router-link to="/">Home</router-link>
+  </div>
+  <router-view/>
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
+<style lang="less">
+#app {
+text-align: center;
+color: #2c3e50;
+}
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
+#nav {
+padding: 30px;
+
+a {
+  font-weight: bold;
+  color: #2c3e50;
+
+  &.router-link-exact-active {
+    color: #42b983;
   }
 }
-</script>
+}
+</style>
